@@ -122,15 +122,17 @@ Token proximo_token(Scanner *sc){
 
 int main(void){
 
+    FILE * fp = fopen("teste.mat", "r");
+    FILE * out = fopen("teste.lex", "a");
     char Entrada[1024];
-    scanf("%[^\n]", Entrada);
+    fscanf(fp, "%[^\n]", Entrada);
 
     Scanner S; 
     iniciar(&S, Entrada);
 
     for(;;){
         Token t = proximo_token(&S);
-        printf("(%s, \"%s\") @ linha %d, col %d\n",
+        fprintf(out, "(%s, \"%s\") @ linha %d, col %d\n",
                nome_token(t.tipo), t.lexema, t.linha, t.coluna);
         free(t.lexema);
         if(t.tipo==TOKEN_FIM || t.tipo==TOKEN_ERRO) break;

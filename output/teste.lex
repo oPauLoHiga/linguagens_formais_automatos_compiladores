@@ -1,0 +1,14 @@
+(INTEIRO, "1") @ linha 1, col 1
+(MAIS, "+") @ linha 1, col 3
+(INTEIRO, "2") @ linha 1, col 5
+(MAIS, "+") @ linha 1, col 7
+(INTEIRO, "3") @ linha 1, col 9
+(MULT, "*") @ linha 1, col 11
+(ABRE_PAR, "(") @ linha 1, col 12
+(INTEIRO, "2") @ linha 1, col 14
+(MENOS, "-") @ linha 1, col 16
+(INTEIRO, "7") @ linha 1, col 18
+(MULT, "*") @ linha 1, col 20
+(INTEIRO, "2") @ linha 1, col 22
+(FECHA_PAR, ")") @ linha 1, col 23
+(FIM, "") @ linha 1, col 24
